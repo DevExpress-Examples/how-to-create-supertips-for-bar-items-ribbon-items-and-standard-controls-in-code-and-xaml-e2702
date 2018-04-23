@@ -1,0 +1,33 @@
+﻿<dx:DXWindow x:Class="SuperTipDemo.SuperTipFromXamlForStandardControls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        Title="Standard Controls - Create SuperTip in XAML" Height="300" Width="350">
+    <Grid>
+        <Button Content="Button" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button.ToolTip>
+                <dx:SuperTipControl>
+                    <dx:SuperTip>
+                        <dx:SuperTipHeaderItem Content="New" />
+                        <dx:SuperTipItem Content="Create a new document" Glyph="pack://application:,,,/new-32x32.png">
+                            <dx:SuperTipItem.LayoutStyle>
+                                <Style TargetType="{x:Type dx:Items2Panel}">
+                                    <Setter Property="Alignment" Value="Right" />
+                                    <Setter Property="HorizontalIndent" Value="20" />
+                                </Style>
+                            </dx:SuperTipItem.LayoutStyle>
+                        </dx:SuperTipItem>
+                        <dx:SuperTipItemSeparator />
+                        <dx:SuperTipItem Content="Opens a new document in a new tab">
+                            <dx:SuperTipItem.ContentTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontFamily="Calibri" Foreground="Gray" FontSize="11" Text="{Binding}" />
+                                </DataTemplate>
+                            </dx:SuperTipItem.ContentTemplate>
+                        </dx:SuperTipItem>
+                    </dx:SuperTip>
+                </dx:SuperTipControl>
+            </Button.ToolTip>
+        </Button>
+    </Grid>
+</dx:DXWindow>
