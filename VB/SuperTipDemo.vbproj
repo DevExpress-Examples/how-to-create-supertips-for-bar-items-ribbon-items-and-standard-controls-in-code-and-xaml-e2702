@@ -38,19 +38,19 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v13.1.Core">
+    <Reference Include="DevExpress.Printing.v14.1.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Data.v13.1">
+    <Reference Include="DevExpress.Data.v14.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Mvvm.v13.1">
+    <Reference Include="DevExpress.Mvvm.v14.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v13.1">
+    <Reference Include="DevExpress.Xpf.Core.v14.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Ribbon.v13.1">
+    <Reference Include="DevExpress.Xpf.Ribbon.v14.1">
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
