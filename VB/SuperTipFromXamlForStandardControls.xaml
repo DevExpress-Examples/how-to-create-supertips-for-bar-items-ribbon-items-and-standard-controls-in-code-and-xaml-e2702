@@ -8,20 +8,20 @@
             <Button.ToolTip>
                 <dx:SuperTipControl>
                     <dx:SuperTip>
-                        <dx:SuperTipHeaderItem Content="New" />
+                        <dx:SuperTipHeaderItem Content="New"/>
                         <dx:SuperTipItem Content="Create a new document" Glyph="pack://application:,,,/new-32x32.png">
                             <dx:SuperTipItem.LayoutStyle>
                                 <Style TargetType="{x:Type dx:Items2Panel}">
-                                    <Setter Property="Alignment" Value="Right" />
-                                    <Setter Property="HorizontalIndent" Value="20" />
+                                    <Setter Property="Alignment" Value="Right"/>
+                                    <Setter Property="HorizontalIndent" Value="20"/>
                                 </Style>
                             </dx:SuperTipItem.LayoutStyle>
                         </dx:SuperTipItem>
-                        <dx:SuperTipItemSeparator />
-                        <dx:SuperTipItem Content="Opens a new document in a new tab">
+                        <dx:SuperTipItemSeparator/>
+                        <dx:SuperTipItem Content="Opens a new document in a new tab" >
                             <dx:SuperTipItem.ContentTemplate>
                                 <DataTemplate>
-                                    <TextBlock FontFamily="Calibri" Foreground="Gray" FontSize="11" Text="{Binding}" />
+                                    <TextBlock FontFamily="Calibri" Foreground="Gray" FontSize="11" Text="{Binding}"/>
                                 </DataTemplate>
                             </dx:SuperTipItem.ContentTemplate>
                         </dx:SuperTipItem>

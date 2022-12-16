@@ -11,20 +11,20 @@
                 <dxb:BarButtonItem Name="bNew" Content="New" Glyph="new-16x16.png" LargeGlyph="new-32x32.png" KeyGesture="Ctrl+N">
                     <dxb:BarButtonItem.SuperTip>
                         <dx:SuperTip>
-                            <dx:SuperTipHeaderItem Content="New" />
+                            <dx:SuperTipHeaderItem Content="New"/>
                             <dx:SuperTipItem Content="Create a new document" Glyph="pack://application:,,,/new-32x32.png">
                                 <dx:SuperTipItem.LayoutStyle>
                                     <Style TargetType="{x:Type dx:Items2Panel}">
-                                        <Setter Property="Alignment" Value="Right" />
-                                        <Setter Property="HorizontalIndent" Value="20" />
+                                        <Setter Property="Alignment" Value="Right"/>
+                                        <Setter Property="HorizontalIndent" Value="20"/>
                                     </Style>
                                 </dx:SuperTipItem.LayoutStyle>
                             </dx:SuperTipItem>
-                            <dx:SuperTipItemSeparator />
-                            <dx:SuperTipItem Content="Opens a new document in a new tab">
+                            <dx:SuperTipItemSeparator/>
+                            <dx:SuperTipItem Content="Opens a new document in a new tab" >
                                 <dx:SuperTipItem.ContentTemplate>
                                     <DataTemplate>
-                                        <TextBlock FontFamily="Calibri" Foreground="Gray" FontSize="11" Text="{Binding}" />
+                                        <TextBlock FontFamily="Calibri" Foreground="Gray" FontSize="11" Text="{Binding}"/>
                                     </DataTemplate>
                                 </dx:SuperTipItem.ContentTemplate>
                             </dx:SuperTipItem>
@@ -34,18 +34,18 @@
             </dxb:BarManager.Items>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <dxr:RibbonControl x:Name="RibbonControl" ApplicationButtonLargeIcon="ribbon-application-32x32.png" ApplicationButtonText="File" PageCategoryAlignment="Right" MinimizationButtonVisibility="Visible">
                     <dxr:RibbonControl.ToolbarItemLinks>
-                        <dxb:BarButtonItemLink BarItemName="bNew" />
+                        <dxb:BarButtonItemLink BarItemName="bNew"/>
                     </dxr:RibbonControl.ToolbarItemLinks>
                     <dxr:RibbonDefaultPageCategory>
                         <dxr:RibbonPage Caption="Home">
                             <dxr:RibbonPageGroup Caption="Document">
-                                <dxb:BarItemLink BarItemName="bNew" RibbonStyle="Large" />
+                                <dxb:BarItemLink BarItemName="bNew" RibbonStyle="Large"/>
                             </dxr:RibbonPageGroup>
                         </dxr:RibbonPage>
                     </dxr:RibbonDefaultPageCategory>

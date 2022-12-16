@@ -7,12 +7,12 @@
     <Grid>
         <dxb:BarManager>
             <dxb:BarManager.Items>
-                <dxb:BarButtonItem Name="bt" Content="Bar Item" />                   
+                <dxb:BarButtonItem Name="bt" Content="Bar Item"/>                   
             </dxb:BarManager.Items>
             <dxb:BarManager.Bars>
                 <dxb:Bar>
                     <dxb:Bar.ItemLinks>
-                        <dxb:BarButtonItemLink BarItemName="bt" />
+                        <dxb:BarButtonItemLink BarItemName="bt"/>
                     </dxb:Bar.ItemLinks>
                 </dxb:Bar>
             </dxb:BarManager.Bars>

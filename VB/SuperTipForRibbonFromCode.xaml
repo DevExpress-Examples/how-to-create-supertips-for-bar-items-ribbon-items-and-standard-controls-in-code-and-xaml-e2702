@@ -8,22 +8,22 @@
     <Grid>
         <dxb:BarManager Name="barManager">
             <dxb:BarManager.Items>
-                <dxb:BarButtonItem Name="bNew" Content="New" Glyph="new-16x16.png" LargeGlyph="new-32x32.png" KeyGesture="Ctrl+N" />
+                <dxb:BarButtonItem Name="bNew" Content="New" Glyph="new-16x16.png" LargeGlyph="new-32x32.png" KeyGesture="Ctrl+N"/>
             </dxb:BarManager.Items>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <dxr:RibbonControl x:Name="RibbonControl" ApplicationButtonLargeIcon="ribbon-application-32x32.png" ApplicationButtonText="File" PageCategoryAlignment="Right" MinimizationButtonVisibility="Visible">
                     <dxr:RibbonControl.ToolbarItemLinks>
-                        <dxb:BarButtonItemLink BarItemName="bNew" />
+                        <dxb:BarButtonItemLink BarItemName="bNew"/>
                     </dxr:RibbonControl.ToolbarItemLinks>
                     <dxr:RibbonDefaultPageCategory>
                         <dxr:RibbonPage Caption="Home">
                             <dxr:RibbonPageGroup Caption="Document">
-                                <dxb:BarItemLink BarItemName="bNew" RibbonStyle="Large" />
+                                <dxb:BarItemLink BarItemName="bNew" RibbonStyle="Large"/>
                             </dxr:RibbonPageGroup>
                         </dxr:RibbonPage>
                     </dxr:RibbonDefaultPageCategory>

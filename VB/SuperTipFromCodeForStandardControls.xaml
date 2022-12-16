@@ -4,6 +4,6 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         Title="Standard Controls - Create SuperTip in Code" Height="300" Width="350">
     <Grid>
-        <Button x:Name="bt" Content="Button" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button x:Name="bt" Content="Button" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </dx:DXWindow>
